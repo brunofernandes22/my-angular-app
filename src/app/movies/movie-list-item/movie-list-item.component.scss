@@ -1,0 +1,22 @@
+.movie-item{
+    text-align: center;
+    border-style: dashed;
+    background-color: white;
+    color:black;
+    min-width: 260px;
+    font-weight: 500;
+}
+
+p{
+    text-align: left;
+    margin: 0;
+    font-size: 15px;
+}
+
+.movie-title {
+    font-weight: 600;
+    font:bold;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; 
+}

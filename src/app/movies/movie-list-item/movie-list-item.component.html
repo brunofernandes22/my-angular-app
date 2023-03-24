@@ -1,0 +1,14 @@
+<div class="container">
+<div class="movie-item p-1">
+    <div *ngIf="!movie">
+        <div class="spinner-border"> </div>
+    </div>
+    <div *ngIf="movie">
+        <img height="200px" [src]="coverImgUrl" />
+        <a style="cursor:pointer" (click)="handleOpenDetailsModal()">
+            <p class="movie-title">{{movie!.title}}</p>
+        </a>
+        <p>{{movie!.year}}</p>
+    </div>
+</div>
+</div>

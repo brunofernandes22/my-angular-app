@@ -1,0 +1,19 @@
+<div class="container pt-5">
+    <div class="row d-flex justify-content-center pb-5">
+        <div class="col-md-10">
+            <input placeholder="Search Movie Title" (keyup)="onKey($event)" class="form-control">
+        </div>
+        <div class="col-md-1">
+            <a (click)="getMovies()">
+                <fa-icon style="color:white;vertical-align: middle;cursor: pointer" [icon]="searchIcon"
+                    class=" fa-xl" />
+            </a>
+        </div>
+    </div>
+    <div class="row" *ngIf="loadCompleted">
+        <div class="col-md-3" *ngFor="let movie of movies">
+            <app-movie-list-item [movie]="movie" />
+        </div>
+    </div>
+    <app-pagination />
+</div>

@@ -1,0 +1,8 @@
+{
+    "/": {
+        "target":  "https://livescore6.p.rapidapi.com",
+        "secure": true,
+        "changeOrigin": true,
+        "logLevel": "debug"
+    }
+}

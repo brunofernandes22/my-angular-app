@@ -1,0 +1,29 @@
+  <div class="modal-header">
+    <h4 class="modal-title">{{movieDetails!.title}}</h4>
+  </div>
+  <div class="modal-body">
+
+    <div class="row">
+      <div class="col-md-3">
+        <img [src]="coverImgUrl" />
+      </div>
+      <div class="col-md-9">
+        <p>{{movieDetails!.year}}</p>
+        <p>Imdb Rating: {{movieDetails!.imdbRating}}</p>
+        <p>PG Rated: {{movieDetails!.rated}}</p>
+        <p>Length: {{movieDetails!.runtime}} minutes</p>
+        <p>Trailer: 
+          <a href="https://www.youtube.com/watch?v={{movieDetails!.youtubeKey}}" target="_blank" rel="noopener noreferrer"> 
+            <fa-icon style="color: red;cursor: pointer" [icon]="faYoutube" class=" fa-xl" />
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row pt-3">
+      <div class="col-md-12">
+        <h5 style="font-weight: 500">Description:</h5>
+        {{movieDetails!.description}}
+      </div>
+    </div>
+  </div>
